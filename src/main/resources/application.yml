@@ -4,8 +4,14 @@ server:
 spring:
   data:
     mongodb:
-      uri: insert-connection-string-here
+      uri: mongodb+srv://jWhitfield:qwertyPotato99@fdm05-06-t1f4g.mongodb.net/test?retryWrites=true&w=majority
       database: fdm_cards
 
 encryption:
   key: serverSecretKey
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
